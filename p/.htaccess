@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # Explicitly disable rewriting for front controllers
+    #RewriteRule ^(assets|media|dashboard)($|/) - [L]
+    RewriteRule ^/index.html - [L]
+    #RewriteRule ^/index.php - [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    # Change below before deploying to production
+    #RewriteRule ^(.*)$ /index.php [QSA,L]
+    RewriteRule ^(.*)$ /p/index.html [QSA,L]
+</IfModule>
