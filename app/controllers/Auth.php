@@ -14,7 +14,10 @@ class Auth extends  Controller
     }
 
     function index() {
-        $this->smarty->display("index.tpl");
+        if (! empty($this->session->data("user")))
+            $this->smarty->display("login/index.tpl");
+        else
+            $this->smarty->display("dashboard/index.tpl");
 
     }
 
