@@ -14,6 +14,7 @@ class Auth extends  Controller
     }
 
     function index() {
+        $this->smarty->display("index.tpl");
 
     }
 
