@@ -3,3 +3,8 @@
 //Less define our simple routes in this file to help us map to the exact methods in our project
 
 $route['']                                  =               "Auth/index";
+
+$route['create-account']                    =               "Auth/create_account";
+$route['home']                              =               "Home/index";
+$route['login']                             =               "Auth/login";
+$route['logout']                            =               "Auth/logout";

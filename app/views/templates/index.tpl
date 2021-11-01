@@ -81,50 +81,7 @@
                                                 </div>
                                                 <!-- message time end -->
                                             </li>
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-4.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
 
-                                                <!-- message content start -->
-                                                <div class="msg-content">
-                                                    <h6 class="author"><a href="profile.html">Jhon Doe</a></h6>
-                                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>15 May 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-5.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
-
-                                                <!-- message content start -->
-                                                <div class="msg-content">
-                                                    <h6 class="author"><a href="profile.html">Jon Wileyam</a></h6>
-                                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>20 Jun 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
                                         </ul>
                                         <div class="msg-dropdown-footer">
                                             <button>See all in messenger</button>
@@ -141,52 +98,6 @@
                                             </button>
                                         </div>
                                         <ul class="dropdown-msg-list">
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-3.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
-
-                                                <!-- message content start -->
-                                                <div class="msg-content notification-content">
-                                                    <a href="profile.html">Robert Faul</a>,
-                                                    <a href="profile.html">william jhon</a>
-                                                    <p>and 35 other people reacted to your photo</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>25 Apr 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-4.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
-
-                                                <!-- message content start -->
-                                                <div class="msg-content notification-content">
-                                                    <a href="profile.html">Robert mushkil</a>,
-                                                    <a href="profile.html">Terry jhon</a>
-                                                    <p>and 20 other people reacted to your photo</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>20 May 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
                                             <li class="msg-list-item d-flex justify-content-between">
                                                 <!-- profile picture end -->
                                                 <div class="profile-thumb">
@@ -249,13 +160,13 @@
                             <div class="profile-thumb-small">
                                 <a href="javascript:void(0)" class="profile-triger">
                                     <figure>
-                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
+                                        <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
                                     </figure>
                                 </a>
                                 <div class="profile-dropdown">
                                     <div class="profile-head">
-                                        <h5 class="name"><a href="#">Madison Howard</a></h5>
-                                        <a class="mail" href="#">mailnam@mail.com</a>
+                                        <h5 class="name"><a href="#">{$user.names}</a></h5>
+                                        <a class="mail" href="#">{$user.email}</a>
                                     </div>
                                     <div class="profile-body">
                                         <ul>
@@ -265,7 +176,7 @@
                                         </ul>
                                         <ul>
                                             <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
-                                            <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
+                                            <li><a href="//{$smarty.server.SERVER_NAME}/logout"><i class="flaticon-unlock"></i>Sign out</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -295,41 +206,7 @@
                             <span>03</span>
                         </button>
                         <ul class="frnd-request-list">
-                            <li>
-                                <div class="frnd-request-member">
-                                    <figure class="request-thumb">
-                                        <a href="profile.html">
-                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-midle-1.jpg" alt="proflie author">
-                                        </a>
-                                    </figure>
-                                    <div class="frnd-content">
-                                        <h6 class="author"><a href="profile.html">merry watson</a></h6>
-                                        <p class="author-subtitle">Works at HasTech</p>
-                                        <div class="request-btn-inner">
-                                            <button class="frnd-btn">confirm</button>
-                                            <button class="frnd-btn delete">delete</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="frnd-request-member">
-                                    <figure class="request-thumb">
-                                        <a href="profile.html">
-                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-midle-2.jpg" alt="proflie author">
-                                        </a>
-                                    </figure>
-                                    <div class="frnd-content">
-                                        <h6 class="author"><a href="profile.html">merry watson</a></h6>
-                                        <p class="author-subtitle">Works at HasTech</p>
-                                        <div class="request-btn-inner">
-                                            <button class="frnd-btn">confirm</button>
-                                            <button class="frnd-btn delete">delete</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                         <li>
                                 <div class="frnd-request-member">
                                     <figure class="request-thumb">
                                         <a href="profile.html">
@@ -377,34 +254,6 @@
                                     <button class="close-btn"><img src="//{$smarty.server.SERVER_NAME}/assets/images/icons/close.png" alt=""></button>
                                 </div>
                             </div>
-                            <div class="message-list-inner">
-                                <ul class="message-list custom-scroll">
-                                    <li class="text-friends">
-                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-                                        <div class="message-time">10 minute ago</div>
-                                    </li>
-                                    <li class="text-author">
-                                        <p>Many desktop publishing packages and web page editors</p>
-                                        <div class="message-time">5 minute ago</div>
-                                    </li>
-                                    <li class="text-friends">
-                                        <p>packages and web page editors </p>
-                                        <div class="message-time">2 minute ago</div>
-                                    </li>
-                                    <li class="text-friends">
-                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-                                        <div class="message-time">10 minute ago</div>
-                                    </li>
-                                    <li class="text-author">
-                                        <p>Many desktop publishing packages and web page editors</p>
-                                        <div class="message-time">5 minute ago</div>
-                                    </li>
-                                    <li class="text-friends">
-                                        <p>packages and web page editors </p>
-                                        <div class="message-time">2 minute ago</div>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="chat-text-field mob-text-box">
                                 <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
                                 <button class="chat-message-send" type="submit" value="submit">
@@ -432,13 +281,13 @@
                 <div class="profile-thumb profile-setting-box">
                     <a href="javascript:void(0)" class="profile-triger">
                         <figure class="profile-thumb-middle">
-                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-1.jpg" alt="profile picture">
+                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
                         </figure>
                     </a>
                     <div class="profile-dropdown text-left">
                         <div class="profile-head">
-                            <h5 class="name"><a href="#">Madison Howard</a></h5>
-                            <a class="mail" href="#">mailnam@mail.com</a>
+                            <h5 class="name"><a href="#">{$user.names}</a></h5>
+                            <a class="mail" href="#">{$user.email}</a>
                         </div>
                         <div class="profile-body">
                             <ul>
@@ -471,15 +320,15 @@
                             <div class="profile-banner">
                                 <figure class="profile-banner-small">
                                     <a href="profile.html">
-                                        <img src="assets/images/banner/banner-small.jpg" alt="">
+                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="">
                                     </a>
                                     <a href="profile.html" class="profile-thumb-2">
-                                        <img src="assets/images/profile/profile-midle-1.jpg" alt="">
+                                        <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
                                     </a>
                                 </figure>
                                 <div class="profile-desc text-center">
-                                    <h6 class="author"><a href="profile.html">Erik Jhonson</a></h6>
-                                    <p>Any one can join with but Social network us if you want Any one can join with us if you want</p>
+                                    <h6 class="author"><a href="profile.html">{$user.names}</a></h6>
+                                    <p>{$user.username} - {$user.email}</p>
                                 </div>
                             </div>
                         </div>
@@ -490,66 +339,6 @@
                             <h4 class="widget-title">page you may like</h4>
                             <div class="widget-body">
                                 <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-1.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Travel The World</a></h3>
-                                            <p class="list-subtitle"><a href="#">adventure</a></p>
-                                        </div>
-                                        <button class="like-button active">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Foodcort Nirala</a></h3>
-                                            <p class="list-subtitle"><a href="#">food</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-5.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Rolin Theitar</a></h3>
-                                            <p class="list-subtitle"><a href="#">drama</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
                                     <li class="unorder-list">
                                         <!-- profile picture end -->
                                         <div class="profile-thumb">
@@ -580,70 +369,6 @@
                             <h4 class="widget-title">latest top news</h4>
                             <div class="widget-body">
                                 <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">2 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">20 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">30 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-17.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">40 min ago</p>
-                                        </div>
-                                    </li>
                                     <li class="unorder-list">
                                         <!-- profile picture end -->
                                         <div class="profile-thumb">
@@ -680,70 +405,6 @@
                                         <div class="profile-thumb">
                                             <a href="#">
                                                 <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-9.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">5 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-8.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">10 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-7.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">18 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-6.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">25 min ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
                                                     <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
                                                 </figure>
                                             </a>
@@ -775,69 +436,9 @@
 
                         <!-- widget single item start -->
                         <div class="card widget-item">
-                            <h4 class="widget-title">Friends Zone</h4>
+                            <h4 class="widget-title">TOP SELLING BRANDS</h4>
                             <div class="widget-body">
                                 <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-15.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Ammeya Jakson</a></h3>
-                                            <p class="list-subtitle"><a href="#">10 mutual</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-18.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Jashon Muri</a></h3>
-                                            <p class="list-subtitle"><a href="#">2 mutual</a></p>
-                                        </div>
-                                        <button class="like-button active">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-14.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Rolin Theitar</a></h3>
-                                            <p class="list-subtitle"><a href="#">drama</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
                                     <li class="unorder-list">
                                         <!-- profile picture end -->
                                         <div class="profile-thumb">

@@ -2,204 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00b6698b-4a70-4ad0-a420-1a0996dd92c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/templates/dashboard/index.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/templates/login/index.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/lightgallery.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/perfect-scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/plyr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/plugins/slick.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/vendor/bicon.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/vendor/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/vendor/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/_flaticon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/bicon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/bicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/bicon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/bicon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/lg.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/lg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/lg.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/lg.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/advertise.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner-small-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner-small-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/profile-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/books/book-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/gallery/gallery-big-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/heart-color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/notification.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/plane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/search-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/search-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icons/users.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/photos/photo-blank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/post/post-large-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-35x35-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-midle-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-midle-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-midle-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/profile/profile-small-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sports/sport-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/timeline/adda-timeline.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/lightgallery-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/nice-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/plyr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor/modernizr-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_tableofcontent.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_friend-request.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_main-wrapper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_mobile-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/pages/_about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/pages/_photos.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/pages/_profile.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Accounts_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Auth_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/banner/login-banner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/templates/dashboard/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/dashboard/index.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/templates/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/templates/login/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/login/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/config/routes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,16 +20,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+            <state relative-caret-position="120">
+              <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Accounts_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -224,20 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="211">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Auth_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/dashboard/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="633" lean-forward="true" selection-start-line="633" selection-end-line="633" />
-              <folding>
-                <element signature="e#1668#1675#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -246,25 +83,16 @@
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/login/index.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3213">
-              <caret line="867" column="14" lean-forward="true" selection-start-line="867" selection-start-column="14" selection-end-line="867" selection-end-column="14" />
+            <state relative-caret-position="15">
+              <caret line="440" column="67" selection-start-line="440" selection-start-column="67" selection-end-line="440" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -285,12 +113,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/config/routes.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/app/views/templates/login/index.tpl" />
+        <option value="$PROJECT_DIR$/system/config/database.php" />
+        <option value="$PROJECT_DIR$/system/config/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/Auth.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/dashboard/index.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/login/index.tpl" />
+        <option value="$PROJECT_DIR$/app/models/Auth_model.php" />
+        <option value="$PROJECT_DIR$/app/models/Accounts_model.php" />
+        <option value="$PROJECT_DIR$/app/controllers/Home.php" />
         <option value="$PROJECT_DIR$/app/views/templates/index.tpl" />
+        <option value="$PROJECT_DIR$/app/views/templates/dashboard/index.tpl" />
       </list>
     </option>
   </component>
@@ -304,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,6 +148,18 @@
               <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
               <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
@@ -340,13 +185,44 @@
             <path>
               <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
               <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ugaprint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ugaprint" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,6 +233,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/banner" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -383,17 +260,18 @@
       <option name="presentableId" value="Default" />
       <updated>1635246181576</updated>
       <workItem from="1635246183267" duration="2583000" />
+      <workItem from="1635665626567" duration="8865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3457000" />
+    <option name="totallyTimeSpent" value="12757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16962843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,7 +284,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22128852" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -423,48 +301,73 @@
     <entry file="file://$PROJECT_DIR$/assets/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/system/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+        <state relative-caret-position="120">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Accounts_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="440" column="67" selection-start-line="440" selection-start-column="67" selection-end-line="440" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/login/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="113" column="50" lean-forward="true" selection-start-line="113" selection-start-column="50" selection-end-line="113" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/login/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/dashboard/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="633" lean-forward="true" selection-start-line="633" selection-end-line="633" />
-          <folding>
-            <element signature="e#1668#1675#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="867" column="14" lean-forward="true" selection-start-line="867" selection-start-column="14" selection-end-line="867" selection-end-column="14" />
+        <state relative-caret-position="380">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
         </state>
       </provider>
     </entry>

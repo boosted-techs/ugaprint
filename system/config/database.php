@@ -19,7 +19,7 @@ $database_config['password'] = 'root';
 /*
  * Mysql database to work with
  */
-$database_config['database'] = 'dating_site';
+$database_config['database'] = 'ugaprint';
 
 /*
  * Redis
