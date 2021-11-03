@@ -15,11 +15,9 @@ class Auth extends  Controller
     }
 
     function index() {
-        if (empty($this->session->data("user")))
-            $this->smarty->display("login/index.tpl");
-        else
+        if (! empty($this->session->data("user")))
             $this->redirect("//" . $this->server->server_name . "/home");
-
+        $this->smarty->display("login/index.tpl");
     }
 
     function create_account() {
@@ -31,7 +29,7 @@ class Auth extends  Controller
                 $this->session->set_user_data("user", $i);
                 $this->redirect("//" . $this->server->server_name . "/home");
             } else
-                $this->redirect("//" . $this->server->server_name . "?error=" . $i);
+                $this->redirect("//" . $this->server->server_name . "/auth?error=" . $i);
 
         }
     }
@@ -41,7 +39,7 @@ class Auth extends  Controller
         if (is_numeric($i))
             $this->redirect("//" . $this->server->server_name . "/home");
         else
-            $this->redirect("//" . $this->server->server_name . "?error=" . $i);
+            $this->redirect("//" . $this->server->server_name . "/auth?error=" . $i);
     }
 
     function logout() {

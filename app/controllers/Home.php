@@ -12,11 +12,15 @@ class Home extends Controller
     {
         parent::__construct();
         $this->model("Accounts_model");
+        $this->model("Products_model");
     }
 
     function index() {
-        $user = $this->model->Accounts_model->is_logged_in();
+        $user = $this->model->Accounts_model->is_logged_in(false);
+        $this->smarty->assign("index_page", true);
         $this->smarty->assign("user", $user);
+        $this->smarty->assign("categories", $this->model->Products_model->get_categories());
+        $this->smarty->assign("stories", $this->model->Products_model->get_stories());
         $this->smarty->display("dashboard/index.tpl");
     }
 

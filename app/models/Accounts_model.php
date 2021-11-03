@@ -13,11 +13,12 @@ class Accounts_model extends Model
         parent::__construct();
     }
 
-    function is_logged_in() {
-        if (empty($this->session->data->user))
-            $this->redirect("//" . $this->server->server_name);
+    function is_logged_in($reload = true) {
+        if ($reload)
+            if (empty($this->session->data->user))
+                $this->redirect("//" . $this->server->server_name);
 
-        return $this->get_account($this->session->data->user);
+        return $this->get_account(empty($this->session->data->user) ? null : $this->session->data->user );
     }
     function get_account($user) {
         $this->db->where('auth.id', $user);

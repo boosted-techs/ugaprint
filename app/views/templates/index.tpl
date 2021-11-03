@@ -48,85 +48,11 @@
                     <div class="header-top-navigation">
                         <nav>
                             <ul>
-                                <li class="active"><a href="index.html">home</a></li>
-                                <li class="msg-trigger"><a class="msg-trigger-btn" href="#a">message</a>
-                                    <div class="message-dropdown" id="a">
-                                        <div class="dropdown-title">
-                                            <p class="recent-msg">recent message</p>
-                                            <div class="message-btn-group">
-                                                <button>New group</button>
-                                                <button>New Message</button>
-                                            </div>
-                                        </div>
-                                        <ul class="dropdown-msg-list">
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-3.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
+                                <li class="active"><a href="//{$smarty.server.SERVER_NAME}">home</a></li>
+                                <li ><a  href="//{$smarty.server.SERVER_NAME}/products">Products</a>
 
-                                                <!-- message content start -->
-                                                <div class="msg-content">
-                                                    <h6 class="author"><a href="profile.html">Mili Raoulin</a></h6>
-                                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>25 Apr 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
-
-                                        </ul>
-                                        <div class="msg-dropdown-footer">
-                                            <button>See all in messenger</button>
-                                            <button>Mark All as Read</button>
-                                        </div>
-                                    </div>
                                 </li>
-                                <li class="notification-trigger"><a class="msg-trigger-btn" href="#b">notification</a>
-                                    <div class="message-dropdown" id="b">
-                                        <div class="dropdown-title">
-                                            <p class="recent-msg">Notification</p>
-                                            <button>
-                                                <i class="flaticon-settings"></i>
-                                            </button>
-                                        </div>
-                                        <ul class="dropdown-msg-list">
-                                            <li class="msg-list-item d-flex justify-content-between">
-                                                <!-- profile picture end -->
-                                                <div class="profile-thumb">
-                                                    <figure class="profile-thumb-middle">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-small-6.jpg" alt="profile picture">
-                                                    </figure>
-                                                </div>
-                                                <!-- profile picture end -->
-
-                                                <!-- message content start -->
-                                                <div class="msg-content notification-content">
-                                                    <a href="profile.html">Horijon Mbala</a>,
-                                                    <a href="profile.html">Bashu jhon</a>
-                                                    <p>and 55 other people reacted to your post</p>
-                                                </div>
-                                                <!-- message content end -->
-
-                                                <!-- message time start -->
-                                                <div class="msg-time">
-                                                    <p>15 Jan 2019</p>
-                                                </div>
-                                                <!-- message time end -->
-                                            </li>
-                                        </ul>
-                                        <div class="msg-dropdown-footer">
-                                            <button>See all in messenger</button>
-                                            <button>Mark All as Read</button>
-                                        </div>
-                                    </div>
+                                <li ><a  href="//{$smarty.server.SERVER_NAME}/shops">Top sellers</a>
                                 </li>
                             </ul>
                         </nav>
@@ -137,51 +63,68 @@
                 <div class="col-md-2">
                     <!-- brand logo start -->
                     <div class="brand-logo text-center">
-                        <a href="index.html">
-                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/logo/logo.png" alt="brand logo">
-                        </a>
+                        <b style="font-size: 20px" class="text-danger">UGA PRiNT</b>
                     </div>
                     <!-- brand logo end -->
                 </div>
 
                 <div class="col-md-5">
                     <div class="header-top-right d-flex align-items-center justify-content-end">
+                        {if ! isset($index_page)}
                         <!-- header top search start -->
-                        <div class="header-top-search">
-                            <form class="top-search-box">
-                                <input type="text" placeholder="Search" class="top-search-field">
-                                <button class="top-search-btn"><i class="flaticon-search"></i></button>
-                            </form>
-                        </div>
+                            <div class="header-top-search">
+                                <form class="top-search-box">
+                                    <input type="text" placeholder="Search" class="top-search-field">
+                                    <button class="top-search-btn"><i class="flaticon-search"></i></button>
+                                </form>
+                            </div>
+                        {/if}
                         <!-- header top search end -->
-
-                        <!-- profile picture start -->
-                        <div class="profile-setting-box">
-                            <div class="profile-thumb-small">
-                                <a href="javascript:void(0)" class="profile-triger">
-                                    <figure>
-                                        <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
-                                    </figure>
-                                </a>
-                                <div class="profile-dropdown">
-                                    <div class="profile-head">
-                                        <h5 class="name"><a href="#">{$user.names}</a></h5>
-                                        <a class="mail" href="#">{$user.email}</a>
-                                    </div>
-                                    <div class="profile-body">
-                                        <ul>
-                                            <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                            <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
-                                            <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
-                                            <li><a href="//{$smarty.server.SERVER_NAME}/logout"><i class="flaticon-unlock"></i>Sign out</a></li>
-                                        </ul>
+                        {if ! empty($user)}
+                            <!-- profile picture start -->
+                            <div class="profile-setting-box">
+                                <div class="profile-thumb-small">
+                                    <a href="javascript:void(0)" class="profile-triger">
+                                        <figure>
+                                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
+                                        </figure>
+                                    </a>
+                                    <div class="profile-dropdown">
+                                        <div class="profile-head">
+                                            <h5 class="name"><a href="#">{$user.names}</a></h5>
+                                            <a class="mail" href="#">{$user.email}</a>
+                                        </div>
+                                        <div class="profile-body">
+                                            <ul>
+                                                <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
+                                                <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
+                                                <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
+                                                <li><a href="//{$smarty.server.SERVER_NAME}/logout"><i class="flaticon-unlock"></i>Sign out</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        {else}
+                            <!-- profile picture start -->
+                            <div class="profile-setting-box">
+                                <div class="profile-thumb-small">
+                                    <a href="javascript:void(0)" class="profile-triger">
+                                        <figure>
+                                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/blank.png" alt="profile picture">
+                                        </figure>
+                                    </a>
+                                    <div class="profile-dropdown">
+                                        <div class="profile-head">
+                                            <h5 class="name"><a href="//{$smarty.server.SERVER_NAME}/auth">LOGIN</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
                         <!-- profile picture end -->
                     </div>
                 </div>
@@ -194,11 +137,11 @@
 <header>
     <div class="mobile-header-wrapper sticky d-block d-lg-none">
         <div class="mobile-header position-relative ">
-            <div class="mobile-logo">
-                <a href="index.html">
-                    <img src="//{$smarty.server.SERVER_NAME}/assets/images/logo/logo-white.png" alt="logo">
-                </a>
-            </div>
+
+                <div class="mobile-logo text-center">
+                    <b style="font-size: 20px" class="text-danger">UGA PRINT</b>
+                </div>
+
             <div class="mobile-menu w-100">
                 <ul>
                     <li>
@@ -276,41 +219,50 @@
                     </li>
                 </ul>
             </div>
-            <div class="mobile-header-profile">
-                <!-- profile picture end -->
-                <div class="profile-thumb profile-setting-box">
-                    <a href="javascript:void(0)" class="profile-triger">
-                        <figure class="profile-thumb-middle">
-                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
-                        </figure>
-                    </a>
-                    <div class="profile-dropdown text-left">
-                        <div class="profile-head">
-                            <h5 class="name"><a href="#">{$user.names}</a></h5>
-                            <a class="mail" href="#">{$user.email}</a>
-                        </div>
-                        <div class="profile-body">
-                            <ul>
-                                <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
-                                <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
-                                <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
-                            </ul>
+            {if ! empty($user)}
+                <div class="mobile-header-profile">
+                    <!-- profile picture end -->
+                    <div class="profile-thumb profile-setting-box">
+                        <a href="javascript:void(0)" class="profile-triger">
+                            <figure class="profile-thumb-middle">
+                                <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
+                            </figure>
+                        </a>
+                        <div class="profile-dropdown text-left">
+                            <div class="profile-head">
+                                <h5 class="name"><a href="#">{$user.names}</a></h5>
+                                <a class="mail" href="#">{$user.email}</a>
+                            </div>
+                            <div class="profile-body">
+                                <ul>
+                                    <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
+                                    <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
+                                    <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
+                                    <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <!-- profile picture end -->
                 </div>
-                <!-- profile picture end -->
-            </div>
+            {/if}
         </div>
     </div>
 </header>
 <!-- header area end -->
 <main>
-
     <div class="main-wrapper pt-80">
+        <div class="bg p-5">
+            <div class="col-md-6 mx-auto p-5">
+                <form action="" class="top-search-box" method="get">
+                    <input type="text" placeholder="Search" class="top-search-field">
+                    <button class="top-search-btn"><i class="flaticon-search"></i></button>
+                </form>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 order-2 order-lg-1">
@@ -322,43 +274,44 @@
                                     <a href="profile.html">
                                         <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="">
                                     </a>
-                                    <a href="profile.html" class="profile-thumb-2">
-                                        <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
-                                    </a>
+                                    {if ! empty($usee)}
+                                        <a href="profile.html" class="profile-thumb-2">
+                                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
+                                        </a>
+                                    {/if}
                                 </figure>
-                                <div class="profile-desc text-center">
-                                    <h6 class="author"><a href="profile.html">{$user.names}</a></h6>
-                                    <p>{$user.username} - {$user.email}</p>
-                                </div>
+                                {if ! empty($user)}
+                                    <div class="profile-desc text-center">
+                                        <h6 class="author"><a href="profile.html">{$user.names}</a></h6>
+                                        <p>{$user.username} - {$user.email}</p>
+                                    </div>
+                                {/if}
                             </div>
                         </div>
                         <!-- widget single item start -->
 
                         <!-- widget single item start -->
                         <div class="card widget-item">
-                            <h4 class="widget-title">page you may like</h4>
+                            <h4 class="widget-title">Services</h4>
                             <div class="widget-body">
                                 <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Active Mind</a></h3>
-                                            <p class="list-subtitle"><a href="#">fitness</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
+                                    {foreach $categories item=list}
+                                        <li class="unorder-list">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">
+                                                    <figure class="profile-thumb-small">
+                                                        <img src="//{$smarty.server.SERVER_NAME}/icons/{$list.thumbnail}" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+                                            <div class="unorder-list-info">
+                                                <h3 class="list-title"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">{$list.category}</a></h3>
+                                                <p class="list-subtitle"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">(0)</a></p>
+                                            </div>
+                                        </li>
+                                    {/foreach}
                                 </ul>
                             </div>
                         </div>
@@ -366,7 +319,7 @@
 
                         <!-- widget single item start -->
                         <div class="card widget-item">
-                            <h4 class="widget-title">latest top news</h4>
+                            <h4 class="widget-title">Quick actions</h4>
                             <div class="widget-body">
                                 <ul class="like-page-list-wrapper">
                                     <li class="unorder-list">
@@ -374,15 +327,31 @@
                                         <div class="profile-thumb">
                                             <a href="#">
                                                 <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-10.jpg" alt="profile picture">
+                                                    <img src="//{$smarty.server.SERVER_NAME}/icons/post-now.png" alt="profile picture">
                                                 </figure>
                                             </a>
                                         </div>
                                         <!-- profile picture end -->
 
                                         <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">39 min ago</p>
+                                            <h3 class="list-title"><a href="#">Post a service</a></h3>
+                                            <p class="list-subtitle">Are you selling any thing, post it on.</p>
+                                        </div>
+                                    </li>
+                                    <li class="unorder-list">
+                                        <!-- profile picture end -->
+                                        <div class="profile-thumb">
+                                            <a href="#">
+                                                <figure class="profile-thumb-small">
+                                                    <img src="//{$smarty.server.SERVER_NAME}/icons/request-now.png" alt="request picture">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <!-- profile picture end -->
+
+                                        <div class="unorder-list-info">
+                                            <h3 class="list-title"><a href="#">Request for a service</a></h3>
+                                            <p class="list-subtitle">Looking for who to do it you.</p>
                                         </div>
                                     </li>
                                 </ul>

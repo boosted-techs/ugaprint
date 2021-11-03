@@ -57,8 +57,8 @@
                         <div class="col-lg-6">
                             <div class="timeline-logo-area d-flex align-items-center">
                                 <div class="timeline-logo">
-                                    <a href="index.html">
-                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/logo/logo.png" alt="timeline logo">
+                                    <a href="//{$smarty.server.SERVER_NAME}">
+                                       <b class="text-danger" style="font-size: 20px">UGA PRiNT</b>
                                     </a>
                                 </div>
                                 <div class="timeline-tagline">
