@@ -4,7 +4,7 @@
 -- https://tableplus.com/
 --
 -- Database: ugaprint
--- Generation Time: 2021-11-01 09:53:18.6240
+-- Generation Time: 2021-11-03 13:39:27.4440
 -- -------------------------------------------------------------
 
 
@@ -29,7 +29,50 @@ CREATE TABLE `auth` (
   `status` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 ;
+
+DROP TABLE IF EXISTS `categories`;
+CREATE TABLE `categories` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` char(100) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `thumbnail` char(100) NOT NULL DEFAULT 'blank.png',
+  `url` char(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ;
+
+DROP TABLE IF EXISTS `comments`;
+CREATE TABLE `comments` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `story` int NOT NULL,
+  `user` int DEFAULT NULL,
+  `comment` text,
+  `deleted` tinyint(1) NOT NULL DEFAULT '1',
+  `date_added` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+
+DROP TABLE IF EXISTS `stories`;
+CREATE TABLE `stories` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `story` text,
+  `user` int NOT NULL,
+  `status` tinyint(1) DEFAULT '1',
+  `image` char(70) NOT NULL DEFAULT (1),
+  `date_added` date NOT NULL,
+  `category` int DEFAULT '1',
+  `url` char(64) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 ;
+
+DROP TABLE IF EXISTS `story_likes`;
+CREATE TABLE `story_likes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `story` int NOT NULL,
+  `date_added` date NOT NULL,
+  `user` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -42,7 +85,27 @@ CREATE TABLE `users` (
   `country` char(100) NOT NULL,
   `gender` char(2) NOT NULL DEFAULT 'M',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
+
+INSERT INTO `auth` (`id`, `email`, `password`, `date_added`, `role`, `username`, `status`) VALUES
+(4, 'ashrikan@gmail.com', 'af003a9652206e3686a3010d739bd396497ef3d673dd304dac462625fcea125d', '2021-11-01', 1, 'nakabiito', 1),
+(5, 'ashan@boostedtechs.com', 'af003a9652206e3686a3010d739bd396497ef3d673dd304dac462625fcea125d', '2021-11-01', 1, 'ashiraff', 1),
+(6, 'ashan4@boostedtechs.com', 'af003a9652206e3686a3010d739bd396497ef3d673dd304dac462625fcea125d', '2021-11-02', 1, 'tumusiime', 1);
+
+INSERT INTO `categories` (`id`, `category`, `status`, `thumbnail`, `url`) VALUES
+(1, 'Business cards', 1, 'cards.png', 'business-cards'),
+(2, 'ID Printng', 1, 'id.png', 'id-printing'),
+(3, 'Magazines printing', 1, 'magazine.png', 'magazines'),
+(4, 'Graphics design', 1, 'graphics.png', 'graphics');
+
+INSERT INTO `stories` (`id`, `story`, `user`, `status`, `image`, `date_added`, `category`, `url`) VALUES
+(1, 'Am here tring new things. I love doing great stadd', 4, 1, 'default.jpg', '2012-09-12', 1, 'post-one'),
+(2, 'Who can do for me a perfect logo at UGX 30.000, AM in Kabale', 5, 1, 'photo-grid.jpg', '2021-09-23', 1, 'post-two');
+
+INSERT INTO `users` (`id`, `names`, `dob`, `profile_pic`, `address`, `contacts`, `country`, `gender`) VALUES
+(4, 'NAKABIITO ENID', '2021-10-31', 'blank.png', 'kasubi-namungoona', '+256784565201', 'Uganda', 'M'),
+(5, 'Ashiraff Tumusiime', '2021-10-31', 'blank.png', 'Buziga - kampala U', '+256759800742', 'Uganda', 'M'),
+(6, 'Tumusiime Ashiraff', '2021-11-01', 'blank.png', 'Buziga - kampala U', '+256759800742', 'Uganda', 'M');
 
 
 
