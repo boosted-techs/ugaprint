@@ -12,7 +12,7 @@
                             <div class="profile-picture-box">
                                 <figure class="profile-picture">
                                     <a href="profile.html">
-                                        <img style="width:270px; height: 270px; object-fit: cover" src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="profile picture">
+                                        <img style="width:270px; height: 270px; object-fit: cover" src="//{$smarty.server.SERVER_NAME}/profile_pics/{$profile.profile_pic}" alt="profile picture">
                                     </a>
                                 </figure>
                             </div>
@@ -47,15 +47,15 @@
                         <aside class="widget-area profile-sidebar">
                             <!-- widget single item start -->
                             <div class="card widget-item">
-                                <h4 class="widget-title">{$user.names}</h4>
+                                <h4 class="widget-title">{$profile.names}</h4>
                                 <div class="widget-body">
                                     <div class="about-author">
                                         <p></p>
                                         <ul class="author-into-list">
                                             <li><a href="#"><i class="bi bi-office-bag"></i>On UGAPRINT</a></li>
-                                            <li><a href="#"><i class="bi bi-home"></i>{$user.address}</a></li>
-                                            <li><a href="#"><i class="bi bi-phone"></i>{$user.contacts}</a></li>
-                                            <li><a href="#"><i class="bi bi-envelop"></i>{$user.email}</a></li>
+                                            <li><a href="#"><i class="bi bi-home"></i>{$profile.address}</a></li>
+                                            <li><a href="#"><i class="bi bi-phone"></i>{$profile.contacts}</a></li>
+                                            <li><a href="#"><i class="bi bi-envelop"></i>{$profile.email}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                                     <!-- profile picture end -->
 
                                     <div class="posted-author">
-                                        <h6 class="author"><a href="//{$smarty.server.SERVER_NAME}/user/{$list.username}">{$list.names}</a></h6>
+                                        <h6 class="author"><a href="//{$smarty.server.SERVER_NAME}/profile/{$list.username}">{$list.names}</a></h6>
                                         <span class="post-time">{$list.date_added}</span>
                                     </div>
 

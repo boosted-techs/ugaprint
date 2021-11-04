@@ -32,7 +32,7 @@ class Accounts_model extends Model
     }
 
     function get_user_profile($username) {
-        $this->get_account($username);
+        return $this->get_account($username);
     }
 
 

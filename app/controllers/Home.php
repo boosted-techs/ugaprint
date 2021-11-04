@@ -54,6 +54,7 @@ class Home extends Controller
         $user_profile = $this->model->Accounts_model->get_user_profile(! empty($username)? $username : $user['username']);
         $this->smarty->assign("no_side_bars", true);
         $this->smarty->assign("user", $user);
+        $this->smarty->assign("profile", $user_profile);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
         $this->smarty->assign("stories", $this->model->Products_model->get_stories());
         $this->smarty->display("dashboard/profile.tpl");
