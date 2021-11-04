@@ -44,7 +44,7 @@
                                         <br/>
                                         <textarea name="share" required class="share-field-big custom-scroll mt-2" placeholder="Hello {$user.names}, What are you selling today?""></textarea>
                                         <input type="file" name="file">
-                                        <button type="submit"  class="">PUBLISH</button>
+                                        <button type="submit"  class="btn post-share-btn">PUBLISH</button>
                                     </form>
 
                                 </div>
@@ -100,7 +100,7 @@
                     {if $list.image != 1}
                         <div class="post-thumb-gallery">
                             <figure class="post-thumb img-popup">
-                                <a href="assets/images/post/post-1.jpg">
+                                <a href="//{$smarty.server.SERVER_NAME}/media/{$list.image}">
                                     <img src="//{$smarty.server.SERVER_NAME}/media/{$list.image}" alt="post image">
                                 </a>
                             </figure>

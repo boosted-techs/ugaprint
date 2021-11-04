@@ -176,7 +176,7 @@
                                     {if $list.image != 1}
                                         <div class="post-thumb-gallery">
                                             <figure class="post-thumb img-popup">
-                                                <a >
+                                                <a href="//{$smarty.server.SERVER_NAME}/media/{$list.image}">
                                                     <img src="//{$smarty.server.SERVER_NAME}/media/{$list.image}" alt="post image">
                                                 </a>
                                             </figure>

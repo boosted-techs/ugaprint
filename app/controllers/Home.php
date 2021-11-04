@@ -88,6 +88,7 @@ class Home extends Controller
     function upload() {
         $user = $this->model->Accounts_model->is_logged_in(false);
         $this->model->Products_model->upload_story($user);
+        $this->redirect($this->server->http_refer);
     }
 
 }

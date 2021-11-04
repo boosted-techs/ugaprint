@@ -35,8 +35,28 @@ class Products_model extends Model
 
         if (empty($story))
             return 1;
-        $this->db->insert("stories", array("story" => $story, "url" => $this->password_hash(time().rand(34000000, 4000000000)), "user" => $user['id'], "category" => $category, "date_added" => date("Y-m-d")));
+        $image = $this->upload_image();
+        $image = $image ? $image : 1;
+        $this->db->insert("stories",  array("image" => $image, "story" => $story, "url" => $this->password_hash(time().rand(34000000, 4000000000)), "user" => $user['id'], "category" => $category, "date_added" => date("Y-m-d")));
         return 2;
+    }
+
+    function upload_image() {
+        $file_name = $_FILES['file']['name'];
+        $tmp_file = $_FILES['file']['tmp_name'];
+        $extension = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+        $accepted_types = array("png", "jpg", "jpeg", "gif", "webp");
+        if (! is_executable($tmp_file)) {
+            if (in_array($extension, $accepted_types)) {
+                $image_name = hash('md5', time() . rand(0, 2000)) . "_nlb." . $extension;
+                $image_path = "media/" . $image_name;
+                //                if (is_dir("media/products_thumbnails/"))
+                //                    echo 1;
+                if (move_uploaded_file($tmp_file, $image_path))
+                   return $image_name;
+            }
+        }
+        return false;
     }
 
 }
