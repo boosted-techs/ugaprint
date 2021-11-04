@@ -29,17 +29,27 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">What are you selling?</h5>
+                                    <h5 class="modal-title">What can we do right now? Sell or Buy?</h5>
                                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body custom-scroll">
-                                    <textarea name="share" class="share-field-big custom-scroll" placeholder="Hello {$user.names}, What are you selling today?""></textarea>
+                                    <form action="//{$smarty.server.SERVER_NAME}/upload_story" method="post" enctype="multipart/form-data">
+                                        <select class="form-control" name="category">
+                                            {foreach $categories item=list}
+                                                <option value="{$list.id}">{$list.category}</option>
+                                            {/foreach}
+                                        </select>
+                                        <br/>
+                                        <textarea name="share" required class="share-field-big custom-scroll mt-2" placeholder="Hello {$user.names}, What are you selling today?""></textarea>
+                                        <input type="file" name="file">
+                                        <button type="submit"  class="">PUBLISH</button>
+                                    </form>
+
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="post-share-btn" data-bs-dismiss="modal">cancel</button>
-                                    <button type="button" class="post-share-btn">PUBLISH</button>
                                 </div>
                             </div>
                         </div>

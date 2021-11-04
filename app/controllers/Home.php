@@ -50,7 +50,8 @@ class Home extends Controller
     }
 
     function profile() {
-        $user = $this->model->Accounts_model->is_logged_in(false);
+        $user = $this->model->Accounts_model->is_logged_in();
+        $this->smarty->assign("no_side_bars", true);
         $this->smarty->assign("user", $user);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
         $this->smarty->assign("stories", $this->model->Products_model->get_stories());
@@ -58,7 +59,7 @@ class Home extends Controller
     }
 
     function settings() {
-        $user = $this->model->Accounts_model->is_logged_in(false);
+        $user = $this->model->Accounts_model->is_logged_in();
         $this->smarty->assign("user", $user);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
         $this->smarty->assign("stories", $this->model->Products_model->get_stories());
@@ -66,11 +67,24 @@ class Home extends Controller
     }
 
     function inbox() {
-        $user = $this->model->Accounts_model->is_logged_in(false);
+        $user = $this->model->Accounts_model->is_logged_in();
         $this->smarty->assign("user", $user);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
         $this->smarty->assign("stories", $this->model->Products_model->get_stories());
         $this->smarty->display("dashboard/inbox.tpl");
+    }
+
+    function search() {
+        $user = $this->model->Accounts_model->is_logged_in(false);
+        $this->smarty->assign("user", $user);
+        $this->smarty->assign("index_page", true);
+        $this->smarty->assign("categories", $this->model->Products_model->get_categories());
+        $this->smarty->assign("stories", $this->model->Products_model->get_stories());
+        $this->smarty->display("dashboard/search.tpl");
+    }
+
+    function upload() {
+
     }
 
 }

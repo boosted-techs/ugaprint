@@ -74,7 +74,7 @@
                         <!-- header top search start -->
                             <div class="header-top-search">
                                 <form class="top-search-box">
-                                    <input type="text" placeholder="Search" class="top-search-field">
+                                    <input type="text" {if isset($smarty.get.q)} value="{$smarty.get.q}" {/if} name="q" placeholder="Search" class="top-search-field">
                                     <button class="top-search-btn"><i class="flaticon-search"></i></button>
                                 </form>
                             </div>
@@ -146,14 +146,27 @@
                 <ul>
 
                     <li>
-                        <button class="notification"><i class="flaticon-notification"></i>
+                        <button class="notification request-trigger"><i class="flaticon-notification"></i>
                             <span>0</span>
                         </button>
+                        <ul class="frnd-request-list">
+                            <li>
+                                <div class="frnd-request-member">
+                                    No Notifications
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <button class="chat-trigger notification"><i class="flaticon-chats"></i>
                             <span>0</span>
                         </button>
+                        <div class="mobile-chat-box">
+                            <div class="live-chat-title">
+                                <!-- profile picture end -->
+                                No chats
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <button class="search-trigger">
@@ -162,7 +175,7 @@
                         </button>
                         <div class="mob-search-box">
                             <form class="mob-search-inner">
-                                <input type="text" placeholder="Search Here" class="mob-search-field">
+                                <input type="text" {if isset($smarty.get.q)} value="{$smarty.get.q}" {/if} name="q" placeholder="Search Here" class="mob-search-field">
                                 <button class="mob-search-btn"><i class="flaticon-search"></i></button>
                             </form>
                         </div>
@@ -208,8 +221,8 @@
         {if isset($index_page)}
             <div class="bg p-5">
                 <div class="col-md-6 mx-auto p-5">
-                    <form action="" class="top-search-box" method="get">
-                        <input type="text" placeholder="Search" class="top-search-field">
+                    <form action="//{$smarty.server.SERVER_NAME}/search" class="top-search-box" method="get">
+                        <input type="text" {if isset($smarty.get.q)} value="{$smarty.get.q}" {/if} name="q" placeholder="Search" class="top-search-field">
                         <button class="top-search-btn"><i class="flaticon-search"></i></button>
                     </form>
                 </div>
@@ -217,175 +230,178 @@
         {/if}
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 order-2 order-lg-1">
-                    <aside class="widget-area">
-                        <!-- widget single item start -->
-                        <div class="card card-profile widget-item p-0">
-                            <div class="profile-banner">
-                                <figure class="profile-banner-small">
-                                    <a href="profile.html">
-                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="">
-                                    </a>
-                                    {if ! empty($user)}
-                                        <a href="profile.html" class="profile-thumb-2">
-                                            <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
+                {if ! isset($no_side_bars)}
+                    <div class="col-lg-3 order-2 order-lg-1">
+                        <aside class="widget-area">
+                            <!-- widget single item start -->
+                            <div class="card card-profile widget-item p-0">
+                                <div class="profile-banner">
+                                    <figure class="profile-banner-small">
+                                        <a href="profile.html">
+                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="">
                                         </a>
+                                        {if ! empty($user)}
+                                            <a href="profile.html" class="profile-thumb-2">
+                                                <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
+                                            </a>
+                                        {/if}
+                                    </figure>
+                                    {if ! empty($user)}
+                                        <div class="profile-desc text-center">
+                                            <h6 class="author"><a href="profile.html">{$user.names}</a></h6>
+                                            <p>{$user.username} - {$user.email}</p>
+                                        </div>
                                     {/if}
-                                </figure>
-                                {if ! empty($user)}
-                                    <div class="profile-desc text-center">
-                                        <h6 class="author"><a href="profile.html">{$user.names}</a></h6>
-                                        <p>{$user.username} - {$user.email}</p>
-                                    </div>
-                                {/if}
+                                </div>
                             </div>
-                        </div>
-                        <!-- widget single item start -->
+                            <!-- widget single item start -->
 
-                        <!-- widget single item start -->
-                        <div class="card widget-item">
-                            <h4 class="widget-title">Services</h4>
-                            <div class="widget-body">
-                                <ul class="like-page-list-wrapper">
-                                    {foreach $categories item=list}
+                            <!-- widget single item start -->
+                            <div class="card widget-item">
+                                <h4 class="widget-title">Services</h4>
+                                <div class="widget-body">
+                                    <ul class="like-page-list-wrapper">
+                                        {foreach $categories item=list}
+                                            <li class="unorder-list">
+                                                <!-- profile picture end -->
+                                                <div class="profile-thumb">
+                                                    <a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">
+                                                        <figure class="profile-thumb-small">
+                                                            <img src="//{$smarty.server.SERVER_NAME}/icons/{$list.thumbnail}" alt="profile picture">
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <!-- profile picture end -->
+                                                <div class="unorder-list-info">
+                                                    <h3 class="list-title"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">{$list.category}</a></h3>
+                                                    <p class="list-subtitle"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">(0)</a></p>
+                                                </div>
+                                            </li>
+                                        {/foreach}
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- widget single item end -->
+
+                            <!-- widget single item start -->
+                            <div class="card widget-item">
+                                <h4 class="widget-title">Quick actions</h4>
+                                <div class="widget-body">
+                                    <ul class="like-page-list-wrapper">
                                         <li class="unorder-list">
                                             <!-- profile picture end -->
                                             <div class="profile-thumb">
-                                                <a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">
+                                                <a href="#">
                                                     <figure class="profile-thumb-small">
-                                                        <img src="//{$smarty.server.SERVER_NAME}/icons/{$list.thumbnail}" alt="profile picture">
+                                                        <img src="//{$smarty.server.SERVER_NAME}/icons/post-now.png" alt="profile picture">
                                                     </figure>
                                                 </a>
                                             </div>
                                             <!-- profile picture end -->
+
                                             <div class="unorder-list-info">
-                                                <h3 class="list-title"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">{$list.category}</a></h3>
-                                                <p class="list-subtitle"><a href="//{$smarty.server.SERVER_NAME}/service/{$list.url}">(0)</a></p>
+                                                <h3 class="list-title"><a href="#">Post a service</a></h3>
+                                                <p class="list-subtitle">Are you selling any thing, post it on.</p>
                                             </div>
                                         </li>
-                                    {/foreach}
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- widget single item end -->
+                                        <li class="unorder-list">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-small">
+                                                        <img src="//{$smarty.server.SERVER_NAME}/icons/request-now.png" alt="request picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
 
-                        <!-- widget single item start -->
-                        <div class="card widget-item">
-                            <h4 class="widget-title">Quick actions</h4>
-                            <div class="widget-body">
-                                <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="//{$smarty.server.SERVER_NAME}/icons/post-now.png" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Post a service</a></h3>
-                                            <p class="list-subtitle">Are you selling any thing, post it on.</p>
-                                        </div>
-                                    </li>
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="//{$smarty.server.SERVER_NAME}/icons/request-now.png" alt="request picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Request for a service</a></h3>
-                                            <p class="list-subtitle">Looking for who to do it you.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- widget single item end -->
-                    </aside>
-                </div>
-                {block name="body"}
-                {/block}
-                <div class="col-lg-3 order-3">
-                    <aside class="widget-area">
-                        <!-- widget single item start -->
-                        <div class="card widget-item">
-                            <h4 class="widget-title">Recent Notifications</h4>
-                            <div class="widget-body">
-                                <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
-                                            <p class="list-subtitle">39 min ago</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- widget single item end -->
-
-                        <!-- widget single item start -->
-                        <div class="card widget-item">
-                            <h4 class="widget-title">Advertizement</h4>
-                            <div class="widget-body">
-                                <div class="add-thumb">
-                                    <a href="#">
-                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="advertisement">
-                                    </a>
+                                            <div class="unorder-list-info">
+                                                <h3 class="list-title"><a href="#">Request for a service</a></h3>
+                                                <p class="list-subtitle">Looking for who to do it you.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <!-- widget single item end -->
+                            <!-- widget single item end -->
+                        </aside>
+                    </div>
+                {/if}
+                    {block name="body"}{/block}
+                {if ! isset($no_side_bars)}
+                    <div class="col-lg-3 order-3">
+                        <aside class="widget-area">
+                            <!-- widget single item start -->
+                            <div class="card widget-item">
+                                <h4 class="widget-title">Recent Notifications</h4>
+                                <div class="widget-body">
+                                    <ul class="like-page-list-wrapper">
+                                        <li class="unorder-list">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-small">
+                                                        <img src="assets/images/profile/profile-35x35-4.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
 
-                        <!-- widget single item start -->
-                        <div class="card widget-item">
-                            <h4 class="widget-title">TOP SELLING BRANDS</h4>
-                            <div class="widget-body">
-                                <ul class="like-page-list-wrapper">
-                                    <li class="unorder-list">
-                                        <!-- profile picture end -->
-                                        <div class="profile-thumb">
-                                            <a href="#">
-                                                <figure class="profile-thumb-small">
-                                                    <img src="assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
-                                                </figure>
-                                            </a>
-                                        </div>
-                                        <!-- profile picture end -->
-
-                                        <div class="unorder-list-info">
-                                            <h3 class="list-title"><a href="#">Active Mind</a></h3>
-                                            <p class="list-subtitle"><a href="#">fitness</a></p>
-                                        </div>
-                                        <button class="like-button">
-                                            <img class="heart" src="assets/images/icons/heart.png" alt="">
-                                            <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
-                                        </button>
-                                    </li>
-                                </ul>
+                                            <div class="unorder-list-info">
+                                                <h3 class="list-title"><a href="#">Any one can join with us if you want</a></h3>
+                                                <p class="list-subtitle">39 min ago</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <!-- widget single item end -->
-                    </aside>
-                </div>
+                            <!-- widget single item end -->
+
+                            <!-- widget single item start -->
+                            <div class="card widget-item">
+                                <h4 class="widget-title">Advertizement</h4>
+                                <div class="widget-body">
+                                    <div class="add-thumb">
+                                        <a href="#">
+                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="advertisement">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- widget single item end -->
+
+                            <!-- widget single item start -->
+                            <div class="card widget-item">
+                                <h4 class="widget-title">TOP SELLING BRANDS</h4>
+                                <div class="widget-body">
+                                    <ul class="like-page-list-wrapper">
+                                        <li class="unorder-list">
+                                            <!-- profile picture end -->
+                                            <div class="profile-thumb">
+                                                <a href="#">
+                                                    <figure class="profile-thumb-small">
+                                                        <img src="assets/images/profile/profile-35x35-20.jpg" alt="profile picture">
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <!-- profile picture end -->
+
+                                            <div class="unorder-list-info">
+                                                <h3 class="list-title"><a href="#">Active Mind</a></h3>
+                                                <p class="list-subtitle"><a href="#">fitness</a></p>
+                                            </div>
+                                            <button class="like-button">
+                                                <img class="heart" src="assets/images/icons/heart.png" alt="">
+                                                <img class="heart-color" src="assets/images/icons/heart-color.png" alt="">
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- widget single item end -->
+                        </aside>
+                    </div>
+                {/if}
             </div>
         </div>
     </div>
