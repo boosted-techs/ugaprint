@@ -75,7 +75,7 @@
                     <!-- profile picture end -->
 
                     <div class="posted-author">
-                        <h6 class="author"><a href="profile.html">{$list.names}</a></h6>
+                        <h6 class="author"><a href="//{$smarty.server.SERVER_NAME}/user/{$list.username}">{$list.names}</a></h6>
                         <span class="post-time">{$list.date_added}</span>
                     </div>
 

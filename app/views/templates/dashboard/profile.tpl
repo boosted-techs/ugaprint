@@ -151,7 +151,7 @@
                                     <!-- profile picture end -->
 
                                     <div class="posted-author">
-                                        <h6 class="author"><a href="profile.html">{$list.names}</a></h6>
+                                        <h6 class="author"><a href="//{$smarty.server.SERVER_NAME}/user/{$list.username}">{$list.names}</a></h6>
                                         <span class="post-time">{$list.date_added}</span>
                                     </div>
 
@@ -176,7 +176,7 @@
                                     {if $list.image != 1}
                                         <div class="post-thumb-gallery">
                                             <figure class="post-thumb img-popup">
-                                                <a href="assets/images/post/post-1.jpg">
+                                                <a >
                                                     <img src="//{$smarty.server.SERVER_NAME}/media/{$list.image}" alt="post image">
                                                 </a>
                                             </figure>

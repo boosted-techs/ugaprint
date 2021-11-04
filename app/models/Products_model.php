@@ -29,4 +29,14 @@ class Products_model extends Model
         return $stories;
     }
 
+    function upload_story($user) {
+        $story = trim($this->inputs->post("share"));
+        $category = $this->inputs->post("category");
+
+        if (empty($story))
+            return 1;
+        $this->db->insert("stories", array("story" => $story, "url" => $this->password_hash(time().rand(34000000, 4000000000)), "user" => $user['id'], "category" => $category, "date_added" => date("Y-m-d")));
+        return 2;
+    }
+
 }
