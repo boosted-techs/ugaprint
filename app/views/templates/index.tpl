@@ -91,17 +91,17 @@
                                     </a>
                                     <div class="profile-dropdown">
                                         <div class="profile-head">
-                                            <h5 class="name"><a href="#">{$user.names}</a></h5>
-                                            <a class="mail" href="#">{$user.email}</a>
+                                            <h5 class="name"><a href="//{$smarty.server.SERVER_NAME}/profile">{$user.names}</a></h5>
+                                            <a class="mail" href="//{$smarty.server.SERVER_NAME}/">{$user.email}</a>
                                         </div>
                                         <div class="profile-body">
                                             <ul>
-                                                <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                                <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
-                                                <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
+                                                <li><a href="//{$smarty.server.SERVER_NAME}/profile"><i class="flaticon-user"></i>Profile</a></li>
+                                                <li><a href="//{$smarty.server.SERVER_NAME}/inbox"><i class="flaticon-message"></i>Inbox</a></li>
+                                                <li><a href="//{$smarty.server.SERVER_NAME}/profile"><i class="flaticon-document"></i>Activity</a></li>
                                             </ul>
                                             <ul>
-                                                <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
+                                                <li><a href="//{$smarty.server.SERVER_NAME}/settings"><i class="flaticon-settings"></i>Setting</a></li>
                                                 <li><a href="//{$smarty.server.SERVER_NAME}/logout"><i class="flaticon-unlock"></i>Sign out</a></li>
                                             </ul>
                                         </div>
@@ -144,66 +144,16 @@
 
             <div class="mobile-menu w-100">
                 <ul>
-                    <li>
-                        <button class="notification request-trigger"><i class="flaticon-users"></i>
-                            <span>03</span>
-                        </button>
-                        <ul class="frnd-request-list">
-                         <li>
-                                <div class="frnd-request-member">
-                                    <figure class="request-thumb">
-                                        <a href="profile.html">
-                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-midle-3.jpg" alt="proflie author">
-                                        </a>
-                                    </figure>
-                                    <div class="frnd-content">
-                                        <h6 class="author"><a href="profile.html">merry watson</a></h6>
-                                        <p class="author-subtitle">Works at HasTech</p>
-                                        <div class="request-btn-inner">
-                                            <button class="frnd-btn">confirm</button>
-                                            <button class="frnd-btn delete">delete</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+
                     <li>
                         <button class="notification"><i class="flaticon-notification"></i>
-                            <span>03</span>
+                            <span>0</span>
                         </button>
                     </li>
                     <li>
                         <button class="chat-trigger notification"><i class="flaticon-chats"></i>
-                            <span>04</span>
+                            <span>0</span>
                         </button>
-                        <div class="mobile-chat-box">
-                            <div class="live-chat-title">
-                                <!-- profile picture end -->
-                                <div class="profile-thumb">
-                                    <a href="profile.html">
-                                        <figure class="profile-thumb-small profile-active">
-                                            <img src="//{$smarty.server.SERVER_NAME}/assets/images/profile/profile-35x35-13.jpg" alt="profile picture">
-                                        </figure>
-                                    </a>
-                                </div>
-                                <!-- profile picture end -->
-                                <div class="posted-author">
-                                    <h6 class="author"><a href="profile.html">Robart Marloyan</a></h6>
-                                    <span class="active-pro">active now</span>
-                                </div>
-                                <div class="live-chat-settings ml-auto">
-                                    <button class="chat-settings"><img src="//{$smarty.server.SERVER_NAME}/assets/images/icons/settings.png" alt=""></button>
-                                    <button class="close-btn"><img src="//{$smarty.server.SERVER_NAME}/assets/images/icons/close.png" alt=""></button>
-                                </div>
-                            </div>
-                            <div class="chat-text-field mob-text-box">
-                                <textarea class="live-chat-field custom-scroll" placeholder="Text Message"></textarea>
-                                <button class="chat-message-send" type="submit" value="submit">
-                                    <img src="//{$smarty.server.SERVER_NAME}/assets/images/icons/plane.png" alt="">
-                                </button>
-                            </div>
-                        </div>
                     </li>
                     <li>
                         <button class="search-trigger">
@@ -230,18 +180,18 @@
                         </a>
                         <div class="profile-dropdown text-left">
                             <div class="profile-head">
-                                <h5 class="name"><a href="#">{$user.names}</a></h5>
-                                <a class="mail" href="#">{$user.email}</a>
+                                <h5 class="name"><a href="//{$smarty.server.SERVER_NAME}/profile">{$user.names}</a></h5>
+                                <a class="mail" href="//{$smarty.server.SERVER_NAME}/profile">{$user.email}</a>
                             </div>
                             <div class="profile-body">
                                 <ul>
-                                    <li><a href="profile.html"><i class="flaticon-user"></i>Profile</a></li>
-                                    <li><a href="#"><i class="flaticon-message"></i>Inbox</a></li>
-                                    <li><a href="#"><i class="flaticon-document"></i>Activity</a></li>
+                                    <li><a href="//{$smarty.server.SERVER_NAME}/profile"><i class="flaticon-user"></i>Profile</a></li>
+                                    <li><a href="//{$smarty.server.SERVER_NAME}/inbox"><i class="flaticon-message"></i>Inbox</a></li>
+                                    <li><a href="//{$smarty.server.SERVER_NAME}/profile"><i class="flaticon-document"></i>Activity</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#"><i class="flaticon-settings"></i>Setting</a></li>
-                                    <li><a href="signup.html"><i class="flaticon-unlock"></i>Sing out</a></li>
+                                    <li><a href="//{$smarty.server.SERVER_NAME}/settings"><i class="flaticon-settings"></i>Setting</a></li>
+                                    <li><a href="//{$smarty.server.SERVER_NAME}/logout"><i class="flaticon-unlock"></i>Sign out</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -255,14 +205,16 @@
 <!-- header area end -->
 <main>
     <div class="main-wrapper pt-80">
-        <div class="bg p-5">
-            <div class="col-md-6 mx-auto p-5">
-                <form action="" class="top-search-box" method="get">
-                    <input type="text" placeholder="Search" class="top-search-field">
-                    <button class="top-search-btn"><i class="flaticon-search"></i></button>
-                </form>
+        {if isset($index_page)}
+            <div class="bg p-5">
+                <div class="col-md-6 mx-auto p-5">
+                    <form action="" class="top-search-box" method="get">
+                        <input type="text" placeholder="Search" class="top-search-field">
+                        <button class="top-search-btn"><i class="flaticon-search"></i></button>
+                    </form>
+                </div>
             </div>
-        </div>
+        {/if}
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 order-2 order-lg-1">
@@ -274,7 +226,7 @@
                                     <a href="profile.html">
                                         <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="">
                                     </a>
-                                    {if ! empty($usee)}
+                                    {if ! empty($user)}
                                         <a href="profile.html" class="profile-thumb-2">
                                             <img src="//{$smarty.server.SERVER_NAME}/profile_pics/{$user.profile_pic}" alt="">
                                         </a>
@@ -396,7 +348,7 @@
                             <div class="widget-body">
                                 <div class="add-thumb">
                                     <a href="#">
-                                        <img src="assets/images/banner/advertise.jpg" alt="advertisement">
+                                        <img src="//{$smarty.server.SERVER_NAME}/assets/images/banner/login-banner.jpg" alt="advertisement">
                                     </a>
                                 </div>
                             </div>
