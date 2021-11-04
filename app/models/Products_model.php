@@ -20,6 +20,12 @@ class Products_model extends Model
     }
 
     function get_stories() {
+        $search_term = $this->inputs->get("q");
+
+        if (isset($search_term)) {
+            $this->db->where("story", "%" . $search_term . "%", "like");
+            $this->db->orWhere("names", "%" . $search_term . "%", 'like');
+        }
         $this->db->where("status", 1);
         $this->db->join("users", "users.id = stories.user");
         $this->db->orderBy("stories.id", "desc");
