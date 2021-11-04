@@ -76,21 +76,22 @@
 
                     <div class="posted-author">
                         <h6 class="author"><a href="//{$smarty.server.SERVER_NAME}/user/{$list.username}">{$list.names}</a></h6>
-                        <span class="post-time">{$list.date_added}</span>
+                        <span class="post-time">{$list.date_added} - <small><b>{$list.category}</b></small></span>
                     </div>
-
-                    <div class="post-settings-bar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <div class="post-settings arrow-shape">
-                            <ul>
-                                <li><button>copy link to adda</button></li>
-                                <li><button>edit post</button></li>
-                                <li><button>embed adda</button></li>
-                            </ul>
-                        </div>
-                    </div>
+                    {if isset($user)}
+                        {if $user.username != $list.username}
+                            <div class="post-settings-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <div class="post-settings arrow-shape">
+                                    <ul>
+                                        <li><A href="//{$smarty.server.SERVER_NAME}/inbox/{$list.username}"><button>Message</button></A></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        {/if}
+                    {/if}
                 </div>
                 <!-- post title start -->
                 <div class="post-content">

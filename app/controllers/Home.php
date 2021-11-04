@@ -56,7 +56,7 @@ class Home extends Controller
         $this->smarty->assign("user", $user);
         $this->smarty->assign("profile", $user_profile);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
-        $this->smarty->assign("stories", $this->model->Products_model->get_stories());
+        $this->smarty->assign("stories", $this->model->Products_model->get_stories(false, $user_profile['id']));
         $this->smarty->display("dashboard/profile.tpl");
     }
 
@@ -89,6 +89,14 @@ class Home extends Controller
         $user = $this->model->Accounts_model->is_logged_in(false);
         $this->model->Products_model->upload_story($user);
         $this->redirect($this->server->http_refer);
+    }
+
+    function services($category) {
+        $user = $this->model->Accounts_model->is_logged_in(false);
+        $this->smarty->assign("user", $user);
+        $this->smarty->assign("categories", $this->model->Products_model->get_categories());
+        $this->smarty->assign("stories", $this->model->Products_model->get_stories($category));
+        $this->smarty->display("dashboard/categories.tpl");
     }
 
 }

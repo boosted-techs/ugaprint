@@ -437,3 +437,4 @@
 <script src="//{$smarty.server.SERVER_NAME}/assets/js/plugins/isotope.pkgd.min.js"></script>
 <!-- Main JS -->
 <script src="//{$smarty.server.SERVER_NAME}/assets/js/main.js"></script>
+{block name="scripts"}{/block}

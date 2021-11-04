@@ -13,19 +13,32 @@ class Products_model extends Model
         parent::__construct();
     }
 
-    function get_categories() {
+    function get_categories($category = false) {
         $this->db->where("status", 1);
+        if ($category)
+            $this->db->where("url", $category);
         $this->db->orderBy("category", "asc");
         return $this->db->get("categories", null, "id, url, category, thumbnail");
     }
 
-    function get_stories() {
+    function get_stories($cat = false, $user = false) {
         $search_term = $this->inputs->get("q");
 
-        if (isset($search_term)) {
+        if ($cat) {
+            $category = $this->get_categories($cat);
+            if (! empty($category))
+                $this->db->where("stories.category", $category[0]['id']);
+        }
+
+        if (! empty($search_term)) {
             $this->db->where("story", "%" . $search_term . "%", "like");
             $this->db->orWhere("names", "%" . $search_term . "%", 'like');
         }
+
+        if (! empty($user))
+            $this->db->where("stories.user", $user);
+
+
         $this->db->where("status", 1);
         $this->db->join("users", "users.id = stories.user");
         $this->db->orderBy("stories.id", "desc");
