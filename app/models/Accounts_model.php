@@ -21,11 +21,18 @@ class Accounts_model extends Model
         return $this->get_account(empty($this->session->data->user) ? null : $this->session->data->user );
     }
     function get_account($user) {
-        $this->db->where('auth.id', $user);
+        if (is_numeric($user))
+            $this->db->where('auth.id', $user);
+        else
+            $this->db->where('auth.username', $user);
         $this->db->join("auth", "auth.id = users.id");
         return $this->db->getOne("users", "names, role,
         users.id, email, username, dob, address, auth.status, date_added,
           profile_pic, contacts, gender, country");
+    }
+
+    function get_user_profile($username) {
+        $this->get_account($username);
     }
 
 

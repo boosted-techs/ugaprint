@@ -16,3 +16,5 @@ $route['search']                            =               "Home/search";
 $route['settings']                          =               "Home/setting";
 $route['shops']                             =               "Home/shop";
 $route['upload_story']                      =               "Home/upload";
+
+$route['user/(:any)']                       =               "Home/profile/$1";

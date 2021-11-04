@@ -49,8 +49,9 @@ class Home extends Controller
         $this->smarty->display("dashboard/shop.tpl");
     }
 
-    function profile() {
+    function profile($username = false) {
         $user = $this->model->Accounts_model->is_logged_in();
+        $user_profile = $this->model->Accounts_model->get_user_profile(! empty($username)? $username : $user['username']);
         $this->smarty->assign("no_side_bars", true);
         $this->smarty->assign("user", $user);
         $this->smarty->assign("categories", $this->model->Products_model->get_categories());
