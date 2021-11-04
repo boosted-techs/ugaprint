@@ -13,4 +13,4 @@ $route['logout']                            =               "Auth/logout";
 $route['products']                          =               "Home/products";
 $route['profile']                           =               "Home/profile";
 $route['settings']                          =               "Home/setting";
-$route['shops']                             =               "Home/shops";
+$route['shops']                             =               "Home/shop";
