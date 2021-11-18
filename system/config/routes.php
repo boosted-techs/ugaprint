@@ -17,6 +17,7 @@ $route['search']                            =               "Home/search";
 $route['settings']                          =               "Home/setting";
 $route['shops']                             =               "Home/shop";
 $route['upload_story']                      =               "Home/upload";
+$route['pay']                               =               "Home/pay";
 
 $route['messages/update_chat/(:any)']       =               "Messages/update_chat/$1";
 $route['inbox/(:any)']                      =               "Messages/inbox/$1";

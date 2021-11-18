@@ -99,4 +99,25 @@ class Home extends Controller
         $this->smarty->display("dashboard/categories.tpl");
     }
 
+    function pay() {
+        $username = $this->inputs->get("i");
+        $this->smarty->assign("ref", hash("sha256", time()));
+        $user = $this->model->Accounts_model->is_logged_in(false);
+
+        $this->smarty->assign("user", $user);
+        //$this->smarty->assign("categories", $this->model->Products_model->get_categories());
+        //$this->smarty->assign("stories", $this->model->Products_model->get_stories());
+
+        $user_profile = $this->model->Accounts_model->get_user_profile(! empty($username)? $username : $user['username']);
+
+        if ($user_profile['id'] == $user['id'])
+            die(print("Sender and receiver are the same"));
+        $this->smarty->assign("user_profile", $user_profile);
+
+        $this->smarty->display("pay.tpl");
+
+        //$inbox = $this->model->Messages_model->get_chat($user['id'], $user_profile['id']);
+        //$this->smarty->assign("inbox", $this->get_chat($user, $user_profile, $inbox));
+    }
+
 }

@@ -15,7 +15,7 @@ $database_config['username'] = 'root';
 /*
  * Mysql Password
  */
-$database_config['password'] = '';
+$database_config['password'] = 'root';
 /*
  * Mysql database to work with
  */

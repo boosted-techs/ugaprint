@@ -4,15 +4,21 @@
         <div class="card card-primary card-outline">
             <div class="card-header">
                 <h3 class="card-title">{$staff.names}</h3>
+                <div class="col-3">
+                    <a href="//{$smarty.server.SERVER_NAME}/pay?i={$staff.username}">
+                        <button class="submit-btn">PAY OUT</button>
+                    </a>
+                </div>
+
             </div>
             <!-- /.card-header -->
             <div class="card-body p-0">
                 {if $staff.username == $user_bio.username}
                     <div class="alert alert-danger text-center">You cannot chat with your self</div>
                 {else}
-                    <div class="card direct-chat direct-chat-warning">
                         <div class="card-header">
                             <div class="card-tools">
+                                <div class="card direct-chat direct-chat-warning">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-minus"></i>
                                 </button>
