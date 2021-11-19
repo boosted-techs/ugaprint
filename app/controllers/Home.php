@@ -120,4 +120,12 @@ class Home extends Controller
         //$this->smarty->assign("inbox", $this->get_chat($user, $user_profile, $inbox));
     }
 
+    function payment_progress($username, $fee) {
+        $user = $this->model->Accounts_model->is_logged_in(false);
+        $this->smarty->assign("fee", $fee);
+        $this->smarty->assign("profile", $this->model->Accounts_model->get_user_profile($username));
+        $this->smarty->assign("user", $user);
+        $this->smarty->display("success.tpl");
+    }
+
 }

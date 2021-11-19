@@ -18,6 +18,7 @@ $route['settings']                          =               "Home/setting";
 $route['shops']                             =               "Home/shop";
 $route['upload_story']                      =               "Home/upload";
 $route['pay']                               =               "Home/pay";
+$route['payment_progress/(:any)/(:any)']    =               "Home/payment_progress/$1/$2";
 
 $route['messages/update_chat/(:any)']       =               "Messages/update_chat/$1";
 $route['inbox/(:any)']                      =               "Messages/inbox/$1";

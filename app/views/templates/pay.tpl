@@ -24,9 +24,9 @@
             country: "UG",
             payment_options: false,
             redirect_url: // specified redirect URL
-                "http://" + window.location.host + "/payment_progress",
+                "http://" + window.location.host + "/payment_progress/{$user_profile['username']}/" + fee,
             meta: {
-                consumer_id: {if isset($user_profile['id'])}{$user_profile['id']} {else}"{$smarty.cookies.temporary_id}_temp"{/if},
+                consumer_id: {if isset($user_profile['username'])}"{$user_profile['username']}"{else}"{$smarty.cookies.temporary_id}_temp"{/if},
                 consumer_mac: "92a3-912ba-1192a",
             },
             customer: {
