@@ -8,7 +8,7 @@
 		var $prevTartget = $(this).parent().siblings().children(".msg-trigger-btn").attr('href');
 		var target = $this.attr('href');
 		$(target).slideToggle();
-		$($prevTartget).slideUp();
+		//$($prevTartget).slideUp();
 		
     });
 
