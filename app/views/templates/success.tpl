@@ -27,7 +27,7 @@
             <h4><span class="text-danger">UGA PRINT</span> PAYMENTS</h4>
         </div>
         <div class="card-body">
-            <p><b>Hello <b class="text-primary">{$user.names}</b>, your payment of <b class="text-danger">UGX {$fee|number_format:2}</b> to <b class="text-info">{$profile.names}</b> has been successful</b>.</p>
+            <p>Hello <b class="text-primary">{$user.names}</b>, your payment of <b class="text-danger">UGX {$fee|number_format:2}</b> to <b class="text-info">{$profile.names}</b> has been successful</b>.</p>
         </div>
     {/if}
 </div>
